@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Secrets</title>
+    <style>
+    html {
+        font-size: 10px;
+    }
+    
+    body {
+        background: #999 url('../images/1.jpg');
+        width: 100%;
+        background-size: cover;
+    }
+    
+    .container {
+        width: 5rem;
+        height: 5rem;
+        margin: 2rem auto;
+        background: white;
+        background-clip: padding-box;
+        transition: all .5s linear;
+    }
+    
+    .container.one {
+        border: .5rem solid hsla(0, 0%, 100%, .5);
+    }
+    
+    .container.one:hover {
+        box-shadow: inset 0 0 0 5px #F9F8F8, 0 0 0 10px #F7F6F6;
+    }
+    
+    .container.two {
+        outline: .1rem dotted #000;
+        outline-offset: -.5rem;
+    }
+    
+    .container.three {
+        width: 5rem;
+        height: 3rem;
+        border-radius: 50% 0 50% 0;
+    }
+    
+    .container.four {
+        width: 5rem;
+        height: 3rem;
+        border-radius: 50%/ 100%;
+    }
+
+    .container.five{
+      width:8rem;
+      height:4rem;
+      border-radius:100% 0 0 100% / 50% 0 0 50%;
+    }
+
+    .container.six{
+      width:8rem;
+      height:4rem;
+      border-radius:0 100% 100% 0 / 0 50% 50% 0;
+    }
+
+    .container.seven{
+      border-radius:100% 0 0 0 ;
+    }
+
+    .container.eight{
+      border-radius:0 100% 0 0 ;
+    }
+
+    .container.nine{
+      border-radius:0 0 100% 0;
+    }
+
+    .container.ten{
+      border-radius:0 0 0 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container one">
+        </div>
+        <div class="container two">
+        </div>
+        <div class="container three">
+        </div>
+        <div class="container four">
+        </div>
+        <div class="container five">
+        </div>
+        <div class="container six">
+        </div>
+        <div class="container seven">
+        </div>
+        <div class="container eight">
+        </div>
+        <div class="container nine">
+        </div>
+          <div class="container ten">
+        </div>
+    </div>
+</body>
+
+</html>

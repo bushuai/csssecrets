@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Secrets</title>
+    <style>
+    html {
+        font-size: 100px;
+    }
+    
+    body {
+        background: #999 url('../images/1.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: 'Microsoft YaHei', sans, sans-serif;
+    }
+    
+    .container {
+        width: 4rem;
+        height: 2rem;
+        margin: .5rem auto;
+        text-align: center;
+        line-height: 200%;
+        transition: all .5s linear;
+    }
+    
+    .container.one {
+        transform: skew(-45deg);
+        box-shadow: 0 0 .1rem #323131;
+        background: linear-gradient(#59AED6, #319FAD);
+    }
+    
+    .container.one > div {
+        transform: skew(45deg);
+    }
+    
+    .container.two {
+        position: relative;
+    }
+    
+    .container.two::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #EA7979;
+        z-index: -1;
+        transform: skew(30deg);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container one">
+            <div>TEXT</div>
+        </div>
+        <div class="container two">
+            TEXT
+        </div>
+    </div>
+</body>
+
+</html>

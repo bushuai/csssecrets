@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Secrets</title>
+    <style>
+    html {
+        font-size: 10px;
+    }
+    
+    .wrapper {
+        color: #fcc;
+    }
+    
+    button {
+        padding: .6rem 1.6rem;
+        border: 1px solid #84A0B2;
+        background: #58a linear-gradient(hsla(0, 0, 100%, .2), transparent);
+        border-radius: .4rem;
+        box-shadow: 0 .1rem .5rem gray;
+        color: white;
+        text-shadow: 0 -.1rem .1rem #335166;
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+    
+    button.ok {
+        background-color: #6b0;
+    }
+    
+    button.cancel {
+        background-color: #c00;
+    }
+    
+    a {
+        color: inherit;
+    }
+    
+    .callout {
+        margin-top: 2rem;
+        position: relative;
+        width: 20rem;
+        height: 5rem;
+        border: 1px solid #84a082;
+        background-color: #fff;
+        text-align:left;
+        padding:.5rem;
+        color:#000;
+        box-shadow:.1rem .1rem .25rem #999;
+    }
+    
+    .callout::before {
+        content: "";
+        position: absolute;
+        padding: .35rem;
+        top: -.4rem;
+        left: 1rem;
+        border: inherit;
+        background: inherit;
+        border-right: 0;
+        border-bottom: 0;
+        transform: rotate(45deg);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <button class="ok cancel">Yes!</button>
+        <a href="#">CSS Secrets</a>
+        <div class="callout">
+          hello world.
+        </div>
+    </div>
+</body>
+
+</html>
